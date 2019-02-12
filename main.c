@@ -7,6 +7,19 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+// dbms maths eem desss ds dendk
+int dbms; // ok
+int maths; // ok
+int eem; // ok
+int desss; // ok
+int ds; // ok
+int dendk;
+int adbms; // ok
+int amaths; // ok
+int aeem; // ok
+int adesss; // ok
+int ads; // ok
+int adendk;
 
 typedef struct node1
 {
@@ -14,6 +27,18 @@ typedef struct node1
     int  day;
     int p[6];
     struct node1 *link;
+   /* int dbms; // ok
+    int maths; // ok
+    int eem; // ok
+    int desss; // ok
+    int ds; // ok
+    int dendk;
+    int adbms; // ok
+    int amaths; // ok
+    int aeem; // ok
+    int adesss; // ok
+    int ads; // ok
+    int adendk;*/
 }node1;
 
 typedef struct node
@@ -31,6 +56,24 @@ node1 *create_node1(void)
 {
     int i;
     new1=(node1 *)malloc(sizeof(node1));
+ 
+  /*  new1->dbms=0; // ok
+    new1->maths = 0; // ok
+    new1->eem = 0; // ok
+    new1->desss = 0; // ok
+    new1->ds = 0; // ok
+    new1->dendk = 0;
+    new1->adbms=0; // ok
+    new1->amaths = 0; // ok
+    new1->aeem = 0; // ok
+    new1->adesss = 0; // ok
+    new1->ads = 0; // ok
+    new1->adendk = 0;*/
+    
+    
+    
+    
+    
     printf("\n enter date ");
     scanf("%ld",&new1->date);
     
@@ -58,6 +101,43 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
+              /*  if(new1->p[i] == 1 && (i == 0 || i == 5)){   //   for the dbms
+                    new1->adbms++;
+                    new1->dbms++;
+                }
+                else{
+                    new1->dbms++;
+                }*/
+                /*if(new1->p[i] == 1 && (i == 2)){   //   for the maths
+                    amaths++;
+                    maths++;
+                }
+                else{
+                    new1->maths++;
+                }*/
+                
+                /*if(new1->p[i] == 1 && (i == 1)){   //   for the eem
+                    new1->aeem++;
+                    new1->eem++;
+                }
+                else{
+                    new1->eem++;
+                }*/
+                
+                /*if(new1->p[i] == 1 && (i == 4)){   //   for the desss
+                    new1->adesss++;
+                    new1->desss++;
+                }
+                else{
+                    new1->desss++;
+                }*/
+               /* if(new1->p[i] == 1 && (i == 3)){   //   for the ds
+                    new1->ads++;
+                    new1->ds++;
+                }
+                else{
+                    new1->ds++;
+                }*/
             }
             break;
         case 2:
@@ -72,7 +152,43 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
+                /*if(new1->p[i] == 1 && i == 2){
+                    new1->adbms++;
+                    new1->dbms++;
+                }
+                else{
+                    new1->dbms++;
+                }*/
+             
+                /*if(new1->p[i] == 1 && (i == 3)){   //   for the maths
+                    new1->amaths++;
+                    new1->maths++;
+                }
+                else{
+                    new1->maths++;
+                }*/
                 
+               /* if(new1->p[i] == 1 && (i == 0)){   //   for the eem
+                    new1->aeem++;
+                    new1->eem++;
+                }
+                else{
+                    new1->eem++;
+                }*/
+                /*if(new1->p[i] == 1 && (i == 2 || i == 5)){   //   for the desss
+                    new1->adesss++;
+                    new1->desss++;
+                }
+                else{
+                    new1->desss++;
+                }*/
+               /* if(new1->p[i] == 1 && (i == 4)){   //   for the ds
+                    new1->ads++;
+                    new1->ds++;
+                }
+                else{
+                    new1->ds++;
+                }*/
             }
             break;
         case 3:
@@ -87,7 +203,28 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
-                
+                /*if(new1->p[i] == 1 && (i == 1 || i ==3 || i==4)){   //   for the maths
+                    new1->amaths++;
+                    new1->maths++;
+                }
+                else{
+                    new1->maths++;
+                }*/
+                /*if(new1->p[i] == 1 && (i == 0)){   //   for the eem
+                    new1->aeem++;
+                    new1->eem++;
+                }
+                else{
+                    new1->eem++;
+                }*/
+               /* if(new1->p[i] == 1 && (i == 2 || i== 5)){   //   for the ds
+                    new1->ads++;
+                    new1->ds++;
+                }
+                else{
+                    new1->ds++;
+                }
+                */
             }
             break;
         case 4:
@@ -102,6 +239,43 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
+               /* if(new1->p[i] == 1 && i == 4){
+                    new1->adbms++;
+                    new1->dbms++;
+                }
+                else{
+                    new1->dbms++;
+                }*/
+                
+                /*if(new1->p[i] == 1 && (i == 2)){   //   for the maths
+                    new1->amaths++;
+                    new1->maths++;
+                }
+                else{
+                    new1->maths++;
+                }*/
+                /*if(new1->p[i] == 1 && (i == 3)){   //   for the eem
+                    new1->aeem++;
+                    new1->eem++;
+                }
+                else{
+                    new1->eem++;
+                }*/
+                /*if(new1->p[i] == 1 && (i == 0)){   //   for the desss
+                    new1->adesss++;
+                    new1->desss++;
+                }
+                else{
+                    new1->desss++;
+                }
+                */
+                /*if(new1->p[i] == 1 && (i == 1 || i == 5)){   //   for the ds
+                    new1->ads++;
+                    new1->ds++;
+                }
+                else{
+                    new1->ds++;
+                }*/
                 
             }
             break;
@@ -117,6 +291,29 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
+                /*if(new1->p[i] == 1 && (i == 1 || i == 2 || i==3)){
+                    new1->adbms++;
+                    new1->dbms++;
+                }
+                else{
+                    new1->dbms++;
+                }*/
+                
+                /*if(new1->p[i] == 1 && (i == 5)){   //   for the maths
+                    new1->amaths++;
+                    new1->maths++;
+                }
+                else{
+                    new1->maths++;
+                }*/
+                
+               /* if(new1->p[i] == 1 && (i == 3)){   //   for the desss
+                    new1->adesss++;
+                    new1->desss++;
+                }
+                else{
+                    new1->desss++;
+                }*/
             }
             break;
         default:
@@ -196,7 +393,7 @@ void display()
         printf("\n your list is empty");
     }
     else{                                     //    link list is exist
-        printf("\n it data system is created by mohit sojitra ");
+        printf("\n it data system is created by FETR STUDENT  ");
         while(temp!=NULL)
         {
             printf("\n \n your roll_no is %d",temp->roll_no);
@@ -500,6 +697,19 @@ void display()
 }
 void search_rollno(int x)
 {
+    dbms = 0; // ok
+    maths = 0; // ok
+    eem = 0; // ok
+    desss = 0; // ok
+    ds = 0; // ok
+    dendk = 0;
+    adbms = 0; // ok
+    amaths = 0; // ok
+    aeem = 0; // ok
+    adesss = 0; // ok
+    ads = 0; // ok
+    adendk = 0;
+
     int i;
     node1 *temp1;
     temp=first;
@@ -514,7 +724,7 @@ void search_rollno(int x)
             }
             if(temp->roll_no==x)
             {
-            printf("\n this database pogramme is created by mohit sojitra");
+            printf("\n this database pogramme is created by FETR student");
             printf("\n well come roll no = %d",temp->roll_no);
             temp1=temp->linkn;
             while(temp1!=NULL)
@@ -531,22 +741,34 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n DBMS NVJ is preasent\n");
+                                        adbms++;
+                                        dbms++;
                                         break;
                                     case 2:
                                         printf("\n EEM TDD is present\n");
+                                       aeem++;
+                                        eem++;
                                         break;
                                     case 3:
                                         printf("\n MATHS RKR is present\n");
+                                        amaths++;
+                                        maths++;
                                         break;
                                     case 4:
                                         printf("\n DS HJS is present\n");
+                                        ads++;
+                                       ds++;
                                         break;
                                         
                                     case 5:
                                         printf("\n DE SSS is present\n");
+                                       adesss++;
+                                        desss++;
                                         break;
                                     case 6:
                                         printf("\n DBMS LAB is present\n");
+                                        adbms++;
+                                        dbms++;
                                         break;
                                 }
                                 
@@ -556,22 +778,33 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n DBMS NVJ is absent\n");
+                                        dbms++;
                                         break;
                                     case 2:
                                         printf("\n EEM TDD is absent\n");
+                                        
+                                        eem++;
                                         break;
                                     case 3:
                                         printf("\n MATHS RKR is absent\n");
+                                        
+                                        maths++;
                                         break;
                                     case 4:
                                         printf("\n DS HJS is absent\n");
+                                     
+                                        ds++;
                                         break;
                                         
                                     case 5:
                                         printf("\n DE SSS is absent\n");
+                                      
+                                        desss++;
                                         break;
                                     case 6:
                                         printf("\n DBMS LAB is absent\n");
+                                    
+                                        dbms++;
                                         break;
                                 }
                             }
@@ -587,22 +820,35 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n EEM TDD is preasent \n");
+                                       aeem++;
+                                       eem++;
                                         break;
                                     case 2:
                                         printf("\n DBMS HJS is present \n");
+                                        adbms++;
+                                        dbms++;
                                         break;
                                     case 3:
                                         printf("\n DE SSS is present \n");
+                                     adesss++;
+                                    desss++;
                                         break;
                                     case 4:
                                         printf("\n AEM RKR is present\n");
+                                        
+                                        amaths++;
+                                        maths++;
                                         break;
                                         
                                     case 5:
                                         printf("\n DS VCJ is present\n");
+                                        ads++;
+                                     ds++;
                                         break;
                                     case 6:
                                         printf("\n DE is present\n");
+                                        adesss++;
+                                        desss++;
                                         break;
                                 }
                                 
@@ -612,24 +858,34 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n EEM TDD is absent\n");
+                                    
+                                       eem++;
                                         break;
                                     case 2:
                                         printf("\n DBMS HJS is absent\n");
+                                        
+                                        dbms++;
                                         break;
                                     case 3:
                                         printf("\n DE SSS is absent\n");
+                                       
+                                      desss++;
                                         
                                         break;
                                     case 4:
                                         printf("\n AEM RKR is absent\n");
                                         
+                                        maths++;
                                         break;
                                         
                                     case 5:
                                         printf("\n DS VCJ is absent\n");
+                                       
+                                       ds++;
                                         break;
                                     case 6:
                                         printf("\n DE is absent\n");
+                                        desss++;
                                         break;
                                 }
                             }
@@ -645,22 +901,34 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n EEM TDD is preasent\n");
+                                        aeem++;
+                                       eem++;
                                         break;
                                     case 2:
                                         printf("\n AEM RKR is present\n");
+                                        amaths++;
+                                        maths++;
                                         break;
                                     case 3:
                                         printf("\n DS HJS is present\n");
+                                       ads++;
+                                       ds++;
                                         break;
                                     case 4:
                                         printf("\n AEM TUTORIAL is present\n");
+                                        amaths++;
+                                        maths++;
                                         break;
                                         
                                     case 5:
                                         printf("\n AEM TUTORIAL IS present\n");
+                                        amaths++;
+                                        maths++;
                                         break;
                                     case 6:
                                         printf("\n DS LAB is present\n");
+                                        ads++;
+                                        ds++;
                                         break;
                                 }
                                 
@@ -670,22 +938,34 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n EEM TDD is absent\n");
+                                        
+                                       eem++;
                                         break;
                                     case 2:
                                         printf("\n AEM RKR is absent\n");
+                                        
+                                        maths++;
                                         break;
                                     case 3:
                                         printf("\n DS HJS is absent\n");
+                                        
+                                       ds++;
                                         break;
                                     case 4:
                                         printf("\n AEM TUTORIAL is absent\n");
+                                        
+                                        maths++;
                                         break;
                                         
                                     case 5:
                                         printf("\n AEM TUTORIAL IS absent\n");
+                                        
+                                        maths++;
                                         break;
                                     case 6:
                                         printf("\n DS LAB is absent\n");
+                                        
+                                      ds++;
                                         break;
                                 }
                             }
@@ -701,22 +981,34 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n DE SSS is preasent\n");
+                                        adesss++;
+                                        desss++;
                                         break;
                                     case 2:
                                         printf("\n DS VCJ is present\n");
+                                      ads++;
+                                      ds++;
                                         break;
                                     case 3:
                                         printf("\n AEM NDK is present\n");
+                                        amaths++;
+                                        maths++;
                                         break;
                                     case 4:
                                         printf("\n EEM TDD is present\n");
+                                       aeem++;
+                                       eem++;
                                         break;
                                         
                                     case 5:
                                         printf("\n DBMS HJS IS present\n");
+                                        adbms++;
+                                        dbms++;
                                         break;
                                     case 6:
                                         printf("\n DS VCJ is present\n");
+                                        ads++;
+                                      ds++;
                                         break;
                                 }
                                 
@@ -725,23 +1017,36 @@ void search_rollno(int x)
                                 switch(i+1)
                                 {
                                     case 1:
+                                        
                                         printf("\n DE SSS is absent\n");
+                                        
+                                       desss++;
                                         break;
                                     case 2:
                                         printf("\n DS VCJ is absent\n");
+                                        
+                                       ds++;
                                         break;
                                     case 3:
                                         printf("\n AEM NDK is absent\n");
+                                        
+                                        maths++;
                                         break;
                                     case 4:
                                         printf("\n EEM TDD is absent\n");
+                                   
+                                      eem++;
                                         break;
                                         
                                     case 5:
                                         printf("\n DBMS HJS IS absent\n");
+                                        
+                                        dbms++;
                                         break;
                                     case 6:
                                         printf("\n DS VCJ is absent\n");
+                                      
+                                        ds++;
                                         break;
                                 }
                             }
@@ -757,22 +1062,34 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n DBMS LAB NVJ is preasent\n");
+                                        adbms++;
+                                        dbms++;
                                         break;
                                     case 2:
                                         printf("\n DBMS LAB NVJ is present\n");
+                                        adbms++;
+                                        dbms++;
                                         break;
                                     case 3:
                                         printf("\n DBMS NVJ is present\n");
+                                        adbms++;
+                                        dbms++;
                                         break;
                                     case 4:
                                         printf("\n DE SSS is present\n");
+                                       adesss++;
+                                     desss++;
                                         break;
                                         
                                     case 5:
                                         printf("\n AEM NDK IS present\n");
+                                        amaths++;
+                                        maths++;
                                         break;
                                     case 6:
                                         printf("\n DE NDK is present\n");
+                                        amaths++;
+                                        maths++;
                                         break;
                                 }
                                 
@@ -782,22 +1099,33 @@ void search_rollno(int x)
                                 {
                                     case 1:
                                         printf("\n DBMS LAB NVJ is absent\n");
+                                        
+                                        dbms++;
                                         break;
                                     case 2:
                                         printf("\n DBMS LAB NVJ is absent\n");
+                                        
+                                        dbms++;
                                         break;
                                     case 3:
                                         printf("\n DBMS NVJ is absent\n");
+                                        
+                                        dbms++;
                                         break;
                                     case 4:
                                         printf("\n DE SSS is absent\n");
+                                        
+                                        desss++;
                                         break;
                                         
                                     case 5:
                                         printf("\n AEM NDK IS absent\n");
+                                    
+                                        maths++;
                                         break;
                                     case 6:
                                         printf("\n DE NDK is absent\n");
+                                        maths++;
                                         break;
                                 }
                             }
@@ -839,7 +1167,7 @@ void search_rollno_date(int x)
             }
             if(temp1->date==d)
             {
-                printf("\n its created by mohit sojitra");
+                printf("\n its created by FETR STUDENT");
                 printf("\n your enter date is %ld ", temp1->date);
                 if(temp1->day==2)
                 {
@@ -1261,6 +1589,53 @@ void delete(void)
     }
     
 }
+void attendence(){
+    int rol;
+    int ch;
+    float per;
+    printf("\n please enter the roll no of the student");
+    scanf("%d",&rol);
+    search_rollno(rol);
+    printf("\n press 1: for known as maths attendence ");
+    
+    printf("\n press 2: for known as ds attendence ");
+    
+    printf("\n press 3: for known as dbms attendence ");
+    
+    printf("\n press 4: for known as de sss sir attendence ");
+    
+    printf("\n press 5: for known as eem attendence ");
+    printf("\n enter your choice");
+    scanf("%d",&ch);
+    
+    switch (ch) {
+        case 1:
+             per = (((float)amaths) / ((float)maths)) * 100;
+            printf("\n your attendence in maths is %f persent" , per);
+            break;
+        case 2:
+            per = (((float)ads) / ((float)ds)) * 100;
+            printf("\n your attendence in maths is %f persent" , per);
+            break;
+        case 3:
+            per = (((float)adbms) / ((float)dbms)) * 100;
+            printf("\n your attendence in maths is %f persent" , per);
+            break;
+        case 4:
+            per = (((float)adesss) / ((float)desss)) * 100;
+            printf("\n your attendence in maths is %f persent" , per);
+            break;
+        case 5:
+            per = (((float)aeem) / ((float)eem)) * 100;
+            printf("\n your attendence in maths is %f persent" , per);
+            break;
+            
+        default:
+            printf("please select valid choice");
+            break;
+    }
+
+}
 int main()
 {
     int ch;
@@ -1270,7 +1645,8 @@ int main()
         printf("\n press 2:-- for desplay your days information");
         printf("\n press 3:-- for search element any date information");
         printf("\n press 4:-- for delete a any date information");
-        printf("\n press 5:-- for exit");
+         printf("\n press 5:-- for filter student due to attendence");
+        printf("\n press 6:-- for exit");
         scanf("%d",&ch);
         switch(ch)
         {
@@ -1287,6 +1663,9 @@ int main()
                 delete();
                 break;
             case 5:
+                attendence();
+                break;
+            case 6:
                 exit(0);
                 break;
             default:
