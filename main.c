@@ -8,17 +8,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 // dbms maths eem desss ds dendk
-int dbms; // ok
-int maths; // ok
-int eem; // ok
-int desss; // ok
-int ds; // ok
+int dbms; 
+int maths; 
+int eem; 
+int desss; 
+int ds; 
 int dendk;
-int adbms; // ok
-int amaths; // ok
-int aeem; // ok
-int adesss; // ok
-int ads; // ok
+int adbms; 
+int amaths; 
+int aeem; 
+int adesss;
+int ads; 
 int adendk;
 
 typedef struct node1
@@ -27,18 +27,7 @@ typedef struct node1
     int  day;
     int p[6];
     struct node1 *link;
-   /* int dbms; // ok
-    int maths; // ok
-    int eem; // ok
-    int desss; // ok
-    int ds; // ok
-    int dendk;
-    int adbms; // ok
-    int amaths; // ok
-    int aeem; // ok
-    int adesss; // ok
-    int ads; // ok
-    int adendk;*/
+ 
 }node1;
 
 typedef struct node
@@ -56,24 +45,7 @@ node1 *create_node1(void)
 {
     int i;
     new1=(node1 *)malloc(sizeof(node1));
- 
-  /*  new1->dbms=0; // ok
-    new1->maths = 0; // ok
-    new1->eem = 0; // ok
-    new1->desss = 0; // ok
-    new1->ds = 0; // ok
-    new1->dendk = 0;
-    new1->adbms=0; // ok
-    new1->amaths = 0; // ok
-    new1->aeem = 0; // ok
-    new1->adesss = 0; // ok
-    new1->ads = 0; // ok
-    new1->adendk = 0;*/
-    
-    
-    
-    
-    
+
     printf("\n enter date ");
     scanf("%ld",&new1->date);
     
@@ -101,43 +73,7 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
-              /*  if(new1->p[i] == 1 && (i == 0 || i == 5)){   //   for the dbms
-                    new1->adbms++;
-                    new1->dbms++;
-                }
-                else{
-                    new1->dbms++;
-                }*/
-                /*if(new1->p[i] == 1 && (i == 2)){   //   for the maths
-                    amaths++;
-                    maths++;
-                }
-                else{
-                    new1->maths++;
-                }*/
-                
-                /*if(new1->p[i] == 1 && (i == 1)){   //   for the eem
-                    new1->aeem++;
-                    new1->eem++;
-                }
-                else{
-                    new1->eem++;
-                }*/
-                
-                /*if(new1->p[i] == 1 && (i == 4)){   //   for the desss
-                    new1->adesss++;
-                    new1->desss++;
-                }
-                else{
-                    new1->desss++;
-                }*/
-               /* if(new1->p[i] == 1 && (i == 3)){   //   for the ds
-                    new1->ads++;
-                    new1->ds++;
-                }
-                else{
-                    new1->ds++;
-                }*/
+             
             }
             break;
         case 2:
@@ -152,43 +88,7 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
-                /*if(new1->p[i] == 1 && i == 2){
-                    new1->adbms++;
-                    new1->dbms++;
-                }
-                else{
-                    new1->dbms++;
-                }*/
-             
-                /*if(new1->p[i] == 1 && (i == 3)){   //   for the maths
-                    new1->amaths++;
-                    new1->maths++;
-                }
-                else{
-                    new1->maths++;
-                }*/
-                
-               /* if(new1->p[i] == 1 && (i == 0)){   //   for the eem
-                    new1->aeem++;
-                    new1->eem++;
-                }
-                else{
-                    new1->eem++;
-                }*/
-                /*if(new1->p[i] == 1 && (i == 2 || i == 5)){   //   for the desss
-                    new1->adesss++;
-                    new1->desss++;
-                }
-                else{
-                    new1->desss++;
-                }*/
-               /* if(new1->p[i] == 1 && (i == 4)){   //   for the ds
-                    new1->ads++;
-                    new1->ds++;
-                }
-                else{
-                    new1->ds++;
-                }*/
+              
             }
             break;
         case 3:
@@ -203,28 +103,7 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
-                /*if(new1->p[i] == 1 && (i == 1 || i ==3 || i==4)){   //   for the maths
-                    new1->amaths++;
-                    new1->maths++;
-                }
-                else{
-                    new1->maths++;
-                }*/
-                /*if(new1->p[i] == 1 && (i == 0)){   //   for the eem
-                    new1->aeem++;
-                    new1->eem++;
-                }
-                else{
-                    new1->eem++;
-                }*/
-               /* if(new1->p[i] == 1 && (i == 2 || i== 5)){   //   for the ds
-                    new1->ads++;
-                    new1->ds++;
-                }
-                else{
-                    new1->ds++;
-                }
-                */
+               
             }
             break;
         case 4:
@@ -239,43 +118,7 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
-               /* if(new1->p[i] == 1 && i == 4){
-                    new1->adbms++;
-                    new1->dbms++;
-                }
-                else{
-                    new1->dbms++;
-                }*/
-                
-                /*if(new1->p[i] == 1 && (i == 2)){   //   for the maths
-                    new1->amaths++;
-                    new1->maths++;
-                }
-                else{
-                    new1->maths++;
-                }*/
-                /*if(new1->p[i] == 1 && (i == 3)){   //   for the eem
-                    new1->aeem++;
-                    new1->eem++;
-                }
-                else{
-                    new1->eem++;
-                }*/
-                /*if(new1->p[i] == 1 && (i == 0)){   //   for the desss
-                    new1->adesss++;
-                    new1->desss++;
-                }
-                else{
-                    new1->desss++;
-                }
-                */
-                /*if(new1->p[i] == 1 && (i == 1 || i == 5)){   //   for the ds
-                    new1->ads++;
-                    new1->ds++;
-                }
-                else{
-                    new1->ds++;
-                }*/
+             
                 
             }
             break;
@@ -291,29 +134,7 @@ node1 *create_node1(void)
                 printf("\n \n enter 1 if you attend lecture else enter the 0 %d attend or note := ",i+1);
                 
                 scanf("%d",&new1->p[i]);
-                /*if(new1->p[i] == 1 && (i == 1 || i == 2 || i==3)){
-                    new1->adbms++;
-                    new1->dbms++;
-                }
-                else{
-                    new1->dbms++;
-                }*/
-                
-                /*if(new1->p[i] == 1 && (i == 5)){   //   for the maths
-                    new1->amaths++;
-                    new1->maths++;
-                }
-                else{
-                    new1->maths++;
-                }*/
-                
-               /* if(new1->p[i] == 1 && (i == 3)){   //   for the desss
-                    new1->adesss++;
-                    new1->desss++;
-                }
-                else{
-                    new1->desss++;
-                }*/
+              
             }
             break;
         default:
@@ -697,17 +518,17 @@ void display()
 }
 void search_rollno(int x)
 {
-    dbms = 0; // ok
-    maths = 0; // ok
-    eem = 0; // ok
-    desss = 0; // ok
-    ds = 0; // ok
+    dbms = 0; 
+    maths = 0;
+    eem = 0; 
+    desss = 0;
+    ds = 0; 
     dendk = 0;
-    adbms = 0; // ok
-    amaths = 0; // ok
-    aeem = 0; // ok
-    adesss = 0; // ok
-    ads = 0; // ok
+    adbms = 0; 
+    amaths = 0; 
+    aeem = 0; 
+    adesss = 0;
+    ads = 0; 
     adendk = 0;
 
     int i;
